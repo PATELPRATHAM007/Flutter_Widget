@@ -23,9 +23,9 @@ class _TextStyleExampleState extends State<TextStyleExample> {
               fontStyle: FontStyle.italic, // make text intalic
               decoration: TextDecoration.lineThrough, // give the under or over or lineThrough line to the text
               decorationColor: Colors.black, // give the color to the element which inside the decration property
-              decorationStyle: TextDecorationStyle.dashed, // covert under line style like dashed ,dotted 
+              decorationStyle: TextDecorationStyle.dashed, // covert under line style like dashed or dotted or solid
               letterSpacing: 2, // for giving space between letter
-              wordSpacing: 2, // for giving space between woed 
+              wordSpacing: 2, // for giving space between word 
               shadows: [ // use for giving shadow effect to the text
                 Shadow(
                   color: Colors.grey, //shadow color 
