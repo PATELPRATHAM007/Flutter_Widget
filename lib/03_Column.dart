@@ -28,8 +28,6 @@ class _ColumnExampleState extends State<ColumnExample> {
                   fontSize: 35
                 ),
               ),
-               padding: EdgeInsets.all(30),
-              color: Colors.orange,
             ),
             Container(
               padding: const EdgeInsets.all(30),
