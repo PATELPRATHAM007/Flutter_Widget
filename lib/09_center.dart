@@ -12,8 +12,8 @@ class _CenterWidgetState extends State<CenterWidget> {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          heightFactor: 3,
-          widthFactor: 3.2,
+          heightFactor: 3, // heightFactor is  always in positive integer (child position = child container high * highfactor)
+          widthFactor: 3.2, // same as hight factor but its apply in width
           child: Container(
             width: 200,
             height: 200,
