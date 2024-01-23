@@ -33,6 +33,7 @@ class _TextStyleExampleState extends State<TextStyleExample> {
                   offset: Offset(2,2), // set and x and y direction of shadow effent(x,y)
                 )
               ]
+              // ..methodname means if you want to add properties into the same object than you can be use .. operator
               //  foreground: Paint()
               //  ..style = PaintingStyle.stroke //for  adding stroke
               //  ..color = Colors.white // for color of stoke
