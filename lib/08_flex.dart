@@ -11,8 +11,9 @@ class _FlexWidgetState extends State<FlexWidget> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        // the flecx widget is a combination of row and column widget.so we are seting derection of axis means you want to set all object vertically so you can be set derection of axis and same as set object in horizontally
         body: Flex(
-          direction: Axis.vertical,
+          direction: Axis.vertical, // set direction using this property
           children: [
             Container(
               height: 100,
