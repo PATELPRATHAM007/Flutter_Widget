@@ -39,7 +39,7 @@ class _GradientExampleState extends State<GradientExample> {
             //       focal: Alignment(.2, .4)),
             // ),
 
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: SweepGradient(
                   colors: [Colors.blue, Colors.green],
                   stops: [0, 1],
