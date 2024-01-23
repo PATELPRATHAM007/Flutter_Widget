@@ -14,7 +14,7 @@ class _ColumnExampleState extends State<ColumnExample> {
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,//It determines how child widgets are aligned perpendicular to the main axis of a Row or Column.
         //  textDirection: TextDirection.ltr, //set direction of word
-        verticalDirection: VerticalDirection.down,
+        verticalDirection: VerticalDirection.down, 
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         mainAxisSize: MainAxisSize.max,
           children: [
