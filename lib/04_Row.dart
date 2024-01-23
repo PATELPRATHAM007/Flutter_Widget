@@ -47,6 +47,9 @@ class _RowExampleState extends State<RowExample> {
             crossAxisAlignment: CrossAxisAlignment.stretch,      
             // textDirection: TextDirection.ltr,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisSize: MainAxisSize.max,
+            textDirection: TextDirection.rtl,
+            textBaseline: TextBaseline.ideographic,
         ),
       ),
     );
