@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+
 class ColumnExample extends StatefulWidget {
   const ColumnExample({super.key});
 
@@ -12,21 +13,19 @@ class _ColumnExampleState extends State<ColumnExample> {
     return MaterialApp(
       home: Scaffold(
         body: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,//It determines how child widgets are aligned perpendicular to the main axis of a Row or Column.
-        //  textDirection: TextDirection.ltr, //set direction of word
-        verticalDirection: VerticalDirection.down, 
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        mainAxisSize: MainAxisSize.max,
+          crossAxisAlignment: CrossAxisAlignment
+              .center, //It determines how child widgets are aligned perpendicular to the main axis of a Row or Column.
+          //  textDirection: TextDirection.ltr, //set direction of word
+          verticalDirection: VerticalDirection.down,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisSize: MainAxisSize.max,
           children: [
             Container(
               padding: const EdgeInsets.all(30),
               color: Colors.orange,
               child: const Text(
                 "first",
-                style: TextStyle(
-                  color: Colors.blue,
-                  fontSize: 35
-                ),
+                style: TextStyle(color: Colors.blue, fontSize: 35),
               ),
             ),
             Container(
@@ -34,10 +33,7 @@ class _ColumnExampleState extends State<ColumnExample> {
               color: Colors.green,
               child: const Text(
                 "second",
-                style: TextStyle(
-                  color: Colors.blue,
-                  fontSize: 35
-                ),
+                style: TextStyle(color: Colors.blue, fontSize: 35),
               ),
             ),
             Container(
@@ -45,15 +41,11 @@ class _ColumnExampleState extends State<ColumnExample> {
               color: Colors.red,
               child: const Text(
                 "third",
-                style: TextStyle(
-                  color: Colors.blue,
-                  fontSize: 35
-                ),
+                style: TextStyle(color: Colors.blue, fontSize: 35),
               ),
             )
           ],
         ),
-        
       ),
     );
   }
