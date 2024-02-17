@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+
 class SizedWidget extends StatefulWidget {
   const SizedWidget({super.key});
 
@@ -12,27 +13,19 @@ class _SizedWidgetState extends State<SizedWidget> {
     return MaterialApp(
       home: Scaffold(
         body: ConstrainedBox(
-          constraints: new BoxConstraints(
-            minHeight: 100,
-            minWidth: 100
-          ),
-          child: SizedBox.shrink(
+          constraints: const BoxConstraints(minHeight: 100, minWidth: 100),
+          child: const SizedBox.shrink(
             child: Card(
-              color: const Color.fromARGB(255, 67, 82, 94),
+              color: Color.fromARGB(255, 67, 82, 94),
               child: Center(
-                child:Text(
+                child: Text(
                   "hello",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 32
-                  ),
-                ) ,
+                  style: TextStyle(color: Colors.white, fontSize: 32),
+                ),
               ),
             ),
             // height: 200,
             // width: 200,
-            
-            
           ),
         ),
       ),
