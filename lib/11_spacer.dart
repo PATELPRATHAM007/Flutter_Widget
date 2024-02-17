@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+
 class SpacerWidget extends StatefulWidget {
   const SpacerWidget({super.key});
 
@@ -19,7 +20,11 @@ class _SpacerWidgetState extends State<SpacerWidget> {
               height: 80,
               color: Colors.red,
             ),
-            const Spacer(flex: 5,),
+
+            // spacer widget are use for giveing different amount of space between to elements
+            const Spacer(
+              flex: 5,
+            ), // flex is always in positive. if flex value is hight than space between tw element are big else less
             Container(
               width: 80,
               height: 80,
