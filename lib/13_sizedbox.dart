@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+
 class SizedWidget extends StatefulWidget {
   const SizedWidget({super.key});
 
@@ -11,24 +12,21 @@ class _SizedWidgetState extends State<SizedWidget> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        //body: SizedBox.expend() its cover whole size
+
         body: SizedBox.fromSize(
-          size: Size(200, 200),
-          child: Card(
+          size: const Size(200, 200),
+          child: const Card(
             color: Color.fromARGB(255, 88, 180, 238),
             child: Center(
-              child:Text(
+              child: Text(
                 "hello",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 32
-                ),
-              ) ,
+                style: TextStyle(color: Colors.white, fontSize: 32),
+              ),
             ),
           ),
           // height: 200,
           // width: 200,
-          
-          
         ),
       ),
     );
